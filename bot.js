@@ -25,160 +25,164 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         var cmd = args[0];
 
         args = args.splice(1);
-        switch(cmd) {
+
+        switch(cmd.toLowerCase()) {
+
           //!character name
-            case 'Ana'||'ana':
+            case 'ana':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Strong Against:\n1. Bastion\n2. Mercy\n3.Torborn\n\nWeak Against:\n1. Genji\n2.Tracer\n3.D.Va\n'
                 });
             break;
-            case 'Bastion'||'bastion':
+            case 'bastion':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Strong Against:\n1. Winston\n2. Reinhardt\n3. Mercy\n\nWeak Against:\n1. Genji\n2. Widowmaker\n3. Hanzo\n'
                 });
             break;
-            case 'D.Va'||'d.va':
+            case 'd.va':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Strong Against:\n1. Widowmaker\n2. Mercy\n3. Hanzo\n\nWeak Against:\n1. Mei\n2. Zarya\n3. Reaper\n'
                 });
             break;
-            case 'Doomfist'||'doomfist':
+            case 'doomfist':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Strong Against:\n1. D.Va\n2. Winston\n3. Zenyatta\n\nWeak Against:\n1. Sombra\n2. Pharah\n3. Orisa\n'
                 });
             break;
-            case 'Genji'||'genji':
+            case 'genji':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Strong Against:\n1. Bastion\n2. Hanzo\n3. Widowmaker\n\nWeak Against:\n1. Mei\n2. Winston\n3. Zarya\n'
                 });
             break;
-            case 'Hanzo'||'hanzo':
+            case 'hanzo':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Strong Against:\n1. Bastion\n2. Mercy\n3. Zenyatta\n\nWeak Against:\n1. Genji\n2. Tracer\n3. Winston\n'
                 });
             break;
-            case 'Junkrat'||'junkrat':
+            case 'junkrat':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Strong Against:\n1. Bastion\n2. Torborn\n3. Reinhardt\n\nWeak Against:\n1. Pharah\n2. Widowmaker\n3. Soldier: 76\n'
                 });
             break;
-            case 'Lucio'||'lucio':
+            case 'lucio':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Strong Against:\n1. Mercy\n2. Symmetra\n3. Zenyatta\n\nWeak Against:\n1. Mei\n2. Roadhog\n3. McCree\n'
                 });
             break;
-            case 'McCree'||'Mccree'||'meccree':
+            case 'meccree':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Strong Against:\n1. Reaper\n2. Tracer\n3. Mercy\n\nWeak Against:\n1. Genji\n2. Widowmaker\n3. Roadhog\n'
                 });
             break;
-            case 'Mei'||'mei':
+            case 'mei':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Strong Against:\n1. Genji\n2. D.Va\n3. Lucio\n\nWeak Against:\n1. Pharah\n2. Widowmaker\n3. Junkrat\n'
                 });
             break;
-            case 'Mercy'||'mercy':
+            case 'mercy':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Strong Against:\n1. Symmetra\n2. Lucio\n3. Zenyatta\n\nWeak Against:\n1. Tracer\n2. Roadhog\n3. Reaper\n'
                 });
             break;
-            case 'Zenyatta'||'zenyatta':
+            case 'zenyatta':
 	               bot.sendMessage({
 		                 to: channelID,
 		                 message: 'Strong Against:\n1. D.Va\n2. Roadhog\n3. Winston\n\nWeak Against:\n1. Hanzo\n2. Tracer\n3. Widowmaker\n'
 	              });
             break;
-            case 'Zarya'||'zarya':
+            case 'zarya':
                  bot.sendMessage({
 		                 to: channelID,
                      message: 'Strong Against:\n1. D.Va\n2. Genji\n3. Winston\n\nWeak Against:\n1. Pharah\n2. Roadhog\n3. Reaper\n'
 	              });
             break;
-            case 'Winston'||'winston':
+            case 'winston':
 	               bot.sendMessage({
 		                 to: channelID,
 		                 message: 'Strong Against:\n1. Genji\n2. Hanzo\n3. Widowmaker\n\nWeak Against:\n1. McCree\n2. Mei\n3. Reaper\n'
 	              });
             break;
-            case 'Widowmaker'||'Widowmaker':
+            case 'widowmaker':
 	               bot.sendMessage({
 		                 to: channelID,
                      message: 'Strong Against:\n1. Torbjorn\n2. Orisa\n3. Pharah\n\nWeak Against:\n1. Genji\n2. Widowmaker\n3. Hanzo\n'
 	              });
             break;
-            case 'Tracer'||'tracer':
+            case 'tracer':
 	               bot.sendMessage({
 		                 to: channelID,
 		                 message: 'Strong Against:\n1. Bastion\n2. Mercy\n3. Widowmaker\n\nWeak Against:\n1. McCree\n2. Mei\n3. Soldier: 76\n'
 	              });
             break;
-            case 'Torbjorn'||'torbjorn':
+            case 'torbjorn':
 	               bot.sendMessage({
 		                 to: channelID,
                      message: 'Strong Against:\n1. Genji\n2. Lucio\n3. Tracer\n\nWeak Against:\n1. Junkrat\n2. Pharah\n3. Widowmaker\n'
 	              });
             break;
-            case 'Symmetra'||'symmetra':
+            case 'symmetra':
 	               bot.sendMessage({
 		                 to: channelID,
                      message: 'Strong Against:\n1. Bastion\n2. D.Va\n3. Reinhardt\n\nWeak Against:\n1. Junkrat\n2. Pharah\n3. Roadhog\n'
 	              });
              break;
-             case 'Sombra'||'sombra':
+             case 'sombra':
 	               bot.sendMessage({
 		                 to: channelID,
 		                 message: 'Strong Against:\n1. Bastion\n2. Pharah\n3. Mercy\n\nWeak Against:\n1. Genji\n2. Mei\n3. Tracer\n'
 	              });
              break;
-             case 'Soldier: 76'||'soldier: 76'||'soldier76'||'soldier 76'||'Soldier76'||'Soldier 76':
+             case 'soldier: 76':
+             case 'soldier76':
+             case 'soldier 76':
 	               bot.sendMessage({
 		                 to: channelID,
 		                 message: 'Strong Against:\n1. Torbjorn\n2. Widowmaker\n3. Zarya\n\nWeak Against:\n1. Symmetra\n2. Mei\n3. Roadhog\n'
 	              });
              break;
-             case 'Roadhog'||'roadhog':
+             case 'roadhog':
 	               bot.sendMessage({
 		                 to: channelID,
 		                 message: 'Strong Against:\n1. Pharah\n2. Reinhardt\n3. Tracer\n\nWeak Against:\n1. D.Va\n2. Genji\n3. Reaper\n'
 	              });
              break;
-             case 'Reinhardt'||'reinhardt':
+             case 'reinhardt':
 	               bot.sendMessage({
 		                 to: channelID,
 		                 message: 'Strong Against:\n1. Soldier: 76\n2. Torbjorn\n3. Widowmaker\n\nWeak Against:\n1. Reaper\n2. Roadhog\n3. Symmetra\n'
 	              });
             break;
-            case 'Reaper'||'reaper':
+            case 'reaper':
 	               bot.sendMessage({
 		                 to: channelID,
 		                 message: 'Strong Against:\n1. Bastion\n2. Mei\n3. Winston\n\nWeak Against:\n1. Junkrat\n2. McCree\n3. Pharah'
 	              });
             break;
-            case 'Pharah'||'pharah':
+            case 'pharah':
 	               bot.sendMessage({
 		                 to: channelID,
 		                 message: 'Strong Against:\n1. Bastion\n2. Junkrat\n3. Mei\n\nWeak Against:\n1. Widowmaker\n2. Roadhog\n3. Soldier: 76'
 	              });
            break;
-           case 'Orisa'||'orisa':
+           case 'orisa':
 	             bot.sendMessage({
 		                 to: channelID,
 		                 message: 'Strong Against:\n1. Reinhardt\n2. Roadhog\n3. Torbjorn\n\nWeak Against:\n1. Sombra\n2. Widowmaker\n3. Tracer\n'
 	              });
             break;
             default:
-              bot.sendMessage({
+                bot.sendMessage({
                     to: channelID,
                     message: 'Invalid Character.'
               });
