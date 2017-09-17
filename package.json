@@ -1,0 +1,11 @@
+{
+  "name": "overwatch-counter",
+  "version": "1.0.0",
+  "description": "Gives description of each overwatch heroes counter.",
+  "main": "bot.js",
+  "author": "Harrison",
+  "dependencies": {
+    "discord.io": "^2.5.2",
+    "winston": "^2.3.1"
+  }
+}
